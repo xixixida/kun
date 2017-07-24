@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xml:lang="zh-CN">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>小米商城 - 小米6、红米Note 4X、小米Max 2、小米笔记本官方网站</title>
+    <link rel="shortcut icon" href="https://s01.mifile.cn/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://s01.mifile.cn/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/public/css/base.min.css">
+    <link rel="stylesheet" href="/public/css/cart.css">
+
+</head>
+
+<body>
+    <div class="site-header site-mini-header">
+        <div class="container">
+            <div class="header-logo">
+                <a class="logo ir" href="//www.mi.com/index.html" title="小米官网" data-stat-id="f4006c1551f77f22" onclick="_msq.push(['trackEvent', '5df97b551662ffe7-f4006c1551f77f22', '//www.mi.com/index.html', 'pcpid', '']);">小米官网</a>
+            </div>
+            <div class="header-title" id="J_miniHeaderTitle">
+                <h2>我的购物车</h2></div>
+            <div class="topbar-info" id="J_userInfo">
+                <a class="link" href="login">登录</a><span class="sep">|</span><a class="#">注册</a> </div>
+        </div>
+        <div id="app">
+            <div class="page-main">
+                <div class="container">
+                    {% if len %}
+                    <div id="J_cartBox" class="">
+                        <div class="cart-goods-list">
+                            <div class="list-head clearfix">
+                                <div class="col col-check"><i class="iconfont icon-checkbox icon-checkbox-selected" id="J_selectAll">√</i>全选</div>
+                                <div class="col col-img">&nbsp;</div>
+                                <div class="col col-name">商品名称</div>
+                                <div class="col col-price">单价</div>
+                                <div class="col col-num">数量</div>
+                                <div class="col col-total">小计</div>
+                                <div class="col col-action">操作</div>
+                            </div>
+                            <div class="list-body" id="J_cartListBody"> 
+                               {% for v in gw %}
+                               {% if v %}
+                                <div class="item-box">
+                                    <div class="item-table J_cartGoods">
+                                        <div class="item-row clearfix">
+                                            <div class="col col-check"> <i class="iconfont icon-checkbox icon-checkbox-selected J_itemCheckbox" data-itemid="2164200007_0_buy" data-status="1">√</i> </div>
+                                            <div class="col col-img">
+                                                <a href=" # " target="_blank"> <img alt="" src="../{{ v }}" width="80" height="80"> </a>
+                                            </div>
+                                            <div class="col col-name">
+                                                <div class="tags"> </div>
+                                                <h3 class="name">  <a href="#" target="_blank"> 小米MIX 全网通 4GB内存＋128GB容量 黑色 128GB </a>  </h3> </div>
+                                            <div class="col col-price"> 3499元 </div>
+                                            <div class="col col-num">
+                                                <div class="change-goods-num clearfix J_changeGoodsNum"> <a href="javascript:void(0)" class="J_minus"><i class="iconfont"></i></a>
+                                                    <input tyep="text" name="2164200007_0_buy" value="1" data-num="1" data-buylimit="1" autocomplete="off" class="goods-num J_goodsNum"> <a href="javascript:void(0)" class="J_plus"><i class="iconfont"></i></a> </div>
+                                            </div>
+                                            <div class="col col-total"> 3499元
+                                                <p class="pre-info"> </p>
+                                            </div>
+                                            <div class="col col-action"> <a id="2164200007_0_buy" data-msg="确定删除吗？" href="javascript:void(0);" title="删除" class="del J_delGoods"><i class="iconfont"></i></a> </div>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <!-- 加价购 -->
+                        <div class="raise-buy-box" id="J_raiseBuyBox">
+                            <div class="item  J_raiseBuyItem" data-info="{ isBatch:'true', productId:'2165100001', goodsId:'2165100001-0-1-2908', bargainId:'8888888_0_bargain_2908_per_1_sale', actId:'2908', type:'1', num:1, maxnum:1 }"> <i class="iconfont icon-plus"></i>+25元得小米活塞耳机 清新版 25元 </div>
+                            <div class="item  J_raiseBuyItem" data-info="{ isBatch:'true', productId:'2162800006', goodsId:'2162800006-0-1-2959', bargainId:'8888888_0_bargain_2959_per_1_sale', actId:'2959', type:'1', num:1, maxnum:1 }"> <i class="iconfont icon-plus"></i>米家随身风扇 14.9元 </div>
+                            <div class="item  J_raiseBuyItem" data-info="{ isBatch:'true', productId:'2164700010', goodsId:'2164700010-0-1-2974', bargainId:'8888888_0_bargain_2974_per_1_sale', actId:'2974', type:'1', num:1, maxnum:1 }"> <i class="iconfont icon-plus"></i>最生活毛巾·青春系列 18元 </div>
+                            <div class="item  J_raiseBuyItem" data-info="{ isBatch:'true', productId:'2163600015', goodsId:'2163600015-0-1-2781', bargainId:'8888888_0_bargain_2781_total_1_sale', actId:'2781', type:'1', num:1, maxnum:1 }"> <i class="iconfont icon-plus"></i>+39元得小米自拍杆（线控版） 39元 </div>
+                            <div class="item  J_raiseBuyItem" data-info="{ isBatch:'true', productId:'2162800008', goodsId:'2162800008-0-1-2381', bargainId:'8888888_0_bargain_2381_total_1_sale', actId:'2381', type:'1', num:1, maxnum:1 }"> <i class="iconfont icon-plus"></i>米家LED随身灯 14.9元 </div>
+                        </div>
+
+                        <div class="cart-bar clearfix cart-bar-fixed" id="J_cartBar">
+                            <div class="section-left">
+                                <a href="//list.mi.com/0" class="back-shopping J_goShoping" data-stat-id="3d1e5bdd191768c8" onclick="_msq.push(['trackEvent', '5df97b551662ffe7-3d1e5bdd191768c8', '#', 'pcpid', '']);">继续购物</a>
+                                <span class="cart-total">共 <i id="J_cartTotalNum">1</i> 件商品，已选择 <i id="J_selTotalNum">1</i> 件</span>
+                                <span class="cart-coudan hide" id="J_coudanTip">
+                        ，还需 <i id="J_postFreeBalance"></i> 元即可免邮费  <a href="javascript:void(0);" id="J_showCoudan" data-stat-id="69b06f1a9d2d512c" onclick="_msq.push(['trackEvent', '5df97b551662ffe7-69b06f1a9d2d512c', 'javascript:void0', 'pcpid', '']);">立即凑单</a>
+                    </span>
+                            </div>
+                            <span class="activity-money">
+                    活动优惠：减 <i id="J_cartActivityMoney">200</i> 元
+                </span>
+                            <span class="total-price">
+                    合计（不含运费）：<em id="J_cartTotalPrice">3299.00</em>元
+                </span>
+                            <a href="javascript:void(0);" class="btn btn-a btn btn-primary" id="J_goCheckout" data-stat-id="f975aeb3e19f0f37" onclick="_msq.push(['trackEvent', '5df97b551662ffe7-f975aeb3e19f0f37', 'javascript:void0', 'pcpid', '']);">去结算</a>
+
+                            <div class="no-select-tip hide" id="J_noSelectTip">
+                                请勾选需要结算的商品
+                                <i class="arrow arrow-a"></i>
+                                <i class="arrow arrow-b"></i>
+                            </div>
+                        </div>
+                    </div>
+                    {% else %}
+                    <div class="cart-empty cart-empty-nologin" id="J_cartEmpty">
+                        <h2>您的购物车还是空的！</h2>
+
+                        <p class="login-desc">登录后将显示您之前加入的商品</p>
+                        <a href="/login">立即登录</a>
+                        <a href="/">马上去购物</a>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://www.mi.com/buyphone/ -->
+<html lang="zh-CN" xml:lang="zh-CN">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>小米手机/小米平板 - 小米商城</title>
+
+
+    <link rel="shortcut icon" href="https://s01.mifile.cn/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://s01.mifile.cn/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/public/css/base.min.css">
+    <link rel="stylesheet" href="/public/css/index.min.css">
+</head>
+
+<body>
+    <div class="site-topbar">
+        <div class="container">
+            <div class="topbar-nav">
+                <a rel="nofollow" href="#">小米商城</a><span class="sep">|</span><a rel="nofollow" href="#">MIUI</a><span class="sep">|</span><a rel="nofollow" href="#">米聊</a><span class="sep">|</span><a rel="nofollow" href="#">游戏</a><span class="sep">|</span><a rel="nofollow" href="#">多看阅读</a><span class="sep">|</span><a rel="nofollow" href="#">云服务</a><span class="sep">|</span><a rel="nofollow" href="#">金融</a><span class="sep">|</span><a rel="nofollow" href="#">小米商城移动版</a><span class="sep">|</span><a rel="nofollow" href="#">问题反馈</a><span class="sep">|</span><a rel="nofollow" href="#">Select Region</a>
+            </div>
+            <div class="topbar-cart" id="J_miniCartTrigger">
+                <a rel="nofollow" class="cart-mini" id="J_miniCartBtn" href="/cart"><i class="iconfont"></i>购物车<span class="cart-mini-num J_cartNum">（{{len}}）</span></a>
+                <div class="cart-menu" id="J_miniCartMenu">
+                    <div class="loading">
+                        <div class="loader"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="topbar-info" id="J_userInfo">
+                <a rel="nofollow" class="link" href="/login">登录</a><span class="sep">|</span><a rel="nofollow" class="link" href="#">注册</a> <span class="sep">|</span><span class="message"><a rel="nofollow" href="#">消息通知<i class="J_miMessageTotal"></i></a></span></div>
+        </div>
+    </div>
+    <div id="app">
+        <div class="site-header">
+            <div class="container">
+                <div class="header-logo">
+                    <a class="logo ir" href="/" title="小米官网">小米官网</a>
+
+                </div>
+                <div class="header-nav">
+                    <ul class="nav-list J_navMainList clearfix">
+                        <li id="J_navCategory" class="nav-category" style='display:none'>
+                            <a class="link-category" href="https://list.mi.com/" data-stat-id="d7d79a744cdeefa8" onclick="_msq.push([&#39;trackEvent&#39;, &#39;81190ccc4d52f577-d7d79a744cdeefa8&#39;, &#39;//list.mi.com&#39;, &#39;pcpid&#39;, &#39;&#39;]);"><span class="text">全部商品分类</span></a>
+                            <div class="site-category">
+                                <ul id="J_categoryList" class="site-category-list clearfix">
+                                    <li v-for='(v,i) in category' class="category-item"> <a class="title" :href="v.a" v-text='v.name'><i class="iconfont"></i></a>
+                                        <div class="children clearfix children-col-3">
+                                            <ul class="children-list children-list-col children-list-col-1">
+                                                <li class="star-goods">
+                                                    <a class="link" href="/mi6"><img class="thumb" src="" width="40" height="40"><span class="text">小米6</span></a> <a class="btn btn-line-primary btn-small btn-buy" href="/product">选购</a> </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item" v-for='(v,i) in header'>
+                            <a class="link" href="javascript: void(0);" @hover="hder(v.void)"><span class="text"  v-text='v.name' ></span><span class="arrow"></span></a>
+                            <div class="item-children">
+                                <div class="container">
+                                    <ul class="children-list clearfix">
+                                        <li class="first" v-for='(v,i) in 6'>
+                                            <div class="figure figure-thumb">
+                                                <a href=""><img src="" srcset="//c1.mifile.cn/f/i/g/2015/cn-index/xm6-320.png 2x" alt="" width="160" height="110"></a>
+                                            </div>
+                                            <div class="title"><a href="">小米6</a></div>
+                                            <p class="price">2499元起</p>
+                                            <div class="flags">
+                                                <div class="flag">新品</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="header-search">
+                    <form id="J_searchForm" class="search-form clearfix" action="/soso" method="get">
+                        <label for="search" class="hide">站内搜索</label>
+                        <input class="search-text" type="search" id="search" name="keyword" autocomplete="off" data-search-config="{&#39;defaultWords&#39;:[{&#39;Key&#39;:&#39;小米6&#39;,&#39;Rst&#39;:7},{&#39;Key&#39;:&#39;红米Note 4X&#39;,&#39;Rst&#39;:8},{&#39;Key&#39;:&#39;小米MIX&#39;,&#39;Rst&#39;:1},{&#39;Key&#39;:&#39;小米Max2&#39;,&#39;Rst&#39;:3},{&#39;Key&#39;:&#39;小米手机5c&#39;,&#39;Rst&#39;:3},{&#39;Key&#39;:&#39;手环&#39;,&#39;Rst&#39;:6},{&#39;Key&#39;:&#39;耳机&#39;,&#39;Rst&#39;:19},{&#39;Key&#39;:&#39;充电宝&#39;,&#39;Rst&#39;:19},{&#39;Key&#39;:&#39;运动鞋&#39;,&#39;Rst&#39;:2},{&#39;Key&#39;:&#39;路由器&#39;,&#39;Rst&#39;:17},{&#39;Key&#39;:&#39;小米盒子&#39;,&#39;Rst&#39;:8}]}">
+                        <input type="submit" class="search-btn iconfont" value="">
+                        <div class="search-hot-words">
+                            <a href="https://item.mi.com/product/10000053.html" data-stat-id="c0fa4fdcd2a830d8" onclick="_msq.push([&#39;trackEvent&#39;, &#39;81190ccc4d52f577-c0fa4fdcd2a830d8&#39;, &#39;https://item.mi.com/product/10000053.html&#39;, &#39;pcpid&#39;, &#39;&#39;]);">电视4A 49"</a><a href="https://item.mi.com/product/10000057.html" data-stat-id="75ccca1bf76883d7" onclick="_msq.push([&#39;trackEvent&#39;, &#39;81190ccc4d52f577-75ccca1bf76883d7&#39;, &#39;//item.mi.com/product/10000057.html&#39;, &#39;pcpid&#39;, &#39;&#39;]);">小米Max 2</a> </div>
+                        <div id="J_keywordList" class="keyword-list hide">
+                            <ul class="result-list"></ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="J_navMenu" class="header-nav-menu" style="display: none;">
+                <div class="container"></div>
+            </div>
+        </div>
+        <div id="J_proHeader">
+            <div class="xm-product-box">
+                <div class="nav-bar" id="J_headNav">
+                    <div class="container J_navSwitch">
+                        <h2 class="J_proName" style="margin: 0;font-size: 18px;font-weight: 400;line-height: 60px;color: #212121;float: left;">小米移动电源2</h2>
+                        <div class="con">
+                            <div class="left" style="float: left;margin-left: 5px;font-size: 12px;margin-top: 21px;"> <span class="separator">|</span> <a href="#">20000mAh</a> <span class="separator">|</span> <a href="#">10000mAh 高配版</a> <span class="separator">|</span> <a href="#">5000mAh</a> </div>
+                            <div class="right" style="float: right;display: inline;margin: 17px 0 0 0;">  <a href="#">概述</a> <span class="separator">|</span>  <a href="#">参数</a> <span class="separator">|</span>  <a href="#">F码通道</a> <span class="separator">|</span>  <a href="#">企业采购</a> <span class="separator">|</span>  <a href="#">用户评价</a>  <a href="/product?id={{ id }}">立即购买</a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        
+    </div>
+</body>
+<script src=/public/js/jquery.min.js></script>
+
+<script src=/public/js/vue.js></script>
+<script src=/public/js/vue-resource.js></script>
+<script>
+    var a = new Vue({
+            el: '#app',
+            data: {
+                category: '',
+                imgs: '',
+                header: '',
+                lunbo: ''
+            },
+            beforeMount: function () {
+                this.$http.get('/header').then(response => {
+                    this.category = response.body.category
+                    this.imgs = response.body.data
+                    this.header = response.body.header
+                    this.lunbo = response.body.lunbo
+
+
+                }, response => {
+
+                })
+            },
+            methods: {
+                aa: () => {
+
+                },
+                hder: (a) => {
+                    alert(a)
+                },
+                images(a, b) {
+                    var data = this.imgs
+                    return data.slice(a, b)
+                },
+                delapp(a) {
+
+                    return a.substring(6)
+                },
+                jd(a) {
+
+                    return a
+
+                }
+            }
+        }
+
+    )
+</script>
+
+</html>
